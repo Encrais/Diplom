@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+
+<div data-role="page" id="pageone">
+  <div data-role="panel" id="myPanel"> 
+    <h2>Panel Header</h2>
+    <p>You can close the panel by clicking outside the panel, pressing the Esc key or by swiping.</p>
+    <div data-role="collapsible" data-collapsed="true" data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d">
+   <h3>I'm a header</h3>
+   <div data-role="collapsible-set" data-collapsed="true">
+   <h4>I'm a header</h4>
+</div>
+</div>
+  </div> 
+  <div data-role="panel" id="myPanel2" data-display="overlay" data-position="right"> 
+    <h2>Panel цвHeader</h2>
+    <p>You can цвцвцвцвцclose the panel by clicking outside the panel, pressing the Esc key or by swiping.</p>
+  </div> 
+
+  <div data-role="header">
+    <h1>Page Header</h1>
+    <a href="#myPanel" data-icon="grid" class="ui-btn ui-btn-inline ui-corner-all ui-shadow">&#9776; Open Panel</a>
+    <a href="#myPanel2" class="ui-btn-right ui-btn-inline ui-corner-all ui-shadow">&#9776; Open Panel</a>
+  </div>
+
+  <div data-role="main" class="ui-content">
+    <p>Click on the button below to open the Panel.</p>
+    <a href="#myPanel" class="ui-btn ui-btn-inline ui-corner-all ui-shadow">Open Panel</a>
+    <a href="#myPanel2" class="ui-btn ui-btn-inline ui-corner-all ui-shadow">Open Panel</a>
+  </div>
+
+  <div data-role="footer">
+    <h1>Page Footer</h1>
+  </div> 
+</div> 
+
+</body>
+</html>
